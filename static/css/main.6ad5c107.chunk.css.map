@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,gBACE,oBAAqB,CACrB,cAAgB,CAChB,UACF,CACA,sBACE,UAAW,CACX,iBACF","file":"main.6ad5c107.chunk.css","sourcesContent":[".continent-link {\n  text-decoration: none;\n  transition: 0.3s;\n  color: #000;\n}\n.continent-link:hover {\n  color: grey;\n  padding-left: 10px;\n}\n"]}
