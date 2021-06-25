@@ -5,6 +5,8 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+import Continent from "./views/ContinentDetailsPage";
+import Continents from "./views/ContinentsPage";
 
 function App() {
   return (
