@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Continent from "./views/ContinentDetailsPage";
 import Continents from "./views/ContinentsPage";
-import NoPage from "./views/NoPage";
 
 function App() {
   return (
@@ -21,9 +20,6 @@ function App() {
         </Route>
         <Route exact path="/continents/:code">
           <Continent />
-        </Route>
-        <Route>
-          <NoPage />
         </Route>
       </Switch>
     </Router>

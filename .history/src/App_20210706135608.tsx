@@ -22,7 +22,8 @@ function App() {
         <Route exact path="/continents/:code">
           <Continent />
         </Route>
-        <Route>
+        <Redirect to="/404" />
+        <Route exact path="/404">
           <NoPage />
         </Route>
       </Switch>

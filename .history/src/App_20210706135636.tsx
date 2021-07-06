@@ -21,7 +21,7 @@ function App() {
         </Route>
         <Route exact path="/continents/:code">
           <Continent />
-        </Route>
+        </Route>{" "}
         <Route>
           <NoPage />
         </Route>
