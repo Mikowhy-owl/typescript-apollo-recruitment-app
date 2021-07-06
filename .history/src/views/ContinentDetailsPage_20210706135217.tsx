@@ -9,7 +9,7 @@ import { ParamTypes } from "../types";
 const ContinentDetailsPage = () => {
   const { code } = useParams<ParamTypes>();
   const { loading, error, data } = useQuery(GET_CONTINENT, {
-    variables: { code: code.toUpperCase() },
+    variables: { code },
   });
 
   const continentData = data?.continent;

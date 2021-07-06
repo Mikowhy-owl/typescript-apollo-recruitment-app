@@ -9,7 +9,7 @@ import { ParamTypes } from "../types";
 const ContinentDetailsPage = () => {
   const { code } = useParams<ParamTypes>();
   const { loading, error, data } = useQuery(GET_CONTINENT, {
-    variables: { code: code.toUpperCase() },
+    variables: { code },
   });
 
   const continentData = data?.continent;
@@ -23,13 +23,13 @@ const ContinentDetailsPage = () => {
           </Row>
         ) : error ? (
           <Row>
-            <Col className="text-center">{error}</Col>
+            <Col className="text-center">{}</Col>
           </Row>
-        ) : continentData?.countries.length ? (
+        ) : continentData.countries.length ? (
           <Countries countries={continentData.countries} />
         ) : (
           <Row>
-            <Col className="text-center">No countries found for that code.</Col>
+            <Col>No countries for that code.</Col>
           </Row>
         )}
       </Row>
