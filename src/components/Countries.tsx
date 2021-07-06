@@ -9,7 +9,7 @@ interface CountriesProps {
 const Countries = ({ countries }: CountriesProps) => {
   return (
     <>
-      {countries.map((country: CountryType) => (
+      {countries.map((country) => (
         <Country country={country} />
       ))}
     </>
